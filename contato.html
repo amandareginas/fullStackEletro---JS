@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Full Stack Eletro</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <!--MENU-->
+    <nav class="menu">
+        <a href="index.html"><img width="100px" src="imagens/logo.jpeg" alt="Full Stack Eletro"></a>
+        <a href="produtos.html">Produtos</a>
+        <a href="loja.html">Nossas lojas</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <header>
+        <h2>Contato</h2>
+    </header>
+    <hr>
+
+    <section>
+        <div class="opcao">
+            <img src="./imagens/email.png" width="40px">
+            <p>contato@fullstackeletro.com</p>
+        </div>
+        <div class="opcao">
+            <img src="./imagens/whatsapp-logo-1-1.png" width="40px">
+            <p>(11) 99999-9999</p>
+        </div>
+
+        <!-- Formulário de envio de mensagem -->
+    <form>
+        <h4>Nome: </h4>
+        <input type="text" style="width: 400px;">
+        <h4>Mensagem: </h4>
+        <textarea style="width: 400px" onclick="caracteres()"></textarea>
+        <button>Enviar</button>
+        <div id="mostrar"></div>
+        <script>
+            function caracteres(){
+            document.getElementById("mostrar").innerHTML="Máximo de 240 caracteres.";}
+        </script>
+    </form>
+        
+    <!-- Formulário de envio de mensagem -->
+    </section>
+
+
+    <footer id="rodape">
+        <div class="fixarRodape">
+            <p id="formas_pagamento">Formas de pagamento</p>
+            <img src="./imagens/formas_de_pagamento.jpeg" width="25%" alt="Formas de pagamento">
+            <p>&copy; Recode Pro</p>
+        </div>
+    </footer>
+</body>
+
+</html>
